@@ -18,22 +18,64 @@ def intro(day=None, isDone=False):
 
 
 def calc_prog(finished, total):
-    return finished/total
+    """
+    Calculates the float value of challenge completion progress
+
+    Parameters:
+    
+    * `finished`    :   The number of days for which tasks are completed
+    * `total`       :   Total number of days in challenge
+
+    Returns:
+
+    * `float`   :   Value of progress, between `0` and `1`
+    * `-1`      :   In case total number of days is passed as `0`
+    """
+    if total != 0:
+        return finished/total
+    return -1
 
 
-def daylist():
-    return ["Day " + str(i) for i in range(1, 31)]
+def daylist(days):
+    """
+    Returns a list of enumerated days
+
+    Parameters:
+
+    * `days`    :   The number of days to be enlisted
+
+    Returns:
+    
+    * `list`    :   ['Day 1', 'Day 2', ... , 'Day `days`']
+    """
+    return ["Day " + str(i) for i in range(1, days+1)]
 
 
 def read_RM_data(filepath, day):
+    """
+    Reads content of README.md file and finds the section relevant to current day. This section is returned as a string.
+
+    Parameters:
+    
+    * `filepath`    :   The path of the README.md file to be read
+    * `day`         :   The day for which relevant section is to be found
+
+    Returns:
+
+    * str   :   Contents of section of file relevant to `day`. If no such section is found, then returns empty string.
+    """
     with open(filepath, "r+") as f:
         srch_str = '<summary>'+day+'</summary>'       # Keep README consistent with this
         stop_str = '</details>'
-        data = f.readline()
+        data = ""
         while srch_str not in data:
             data = f.readline()
+            if not data:
+                return ''
         data = ""
         while stop_str not in data:
             data += f.readline()
+            if not data:
+                return ''
     
     return data
