@@ -30,8 +30,35 @@ By taking up the challenge, I wish to accomplish the following goals:
 ## Timeline
 
 <details open>
-<summary> Day 1 </summary>
+<summary>Day 1</summary>
+<h3> Task Summary </h3>
+
+- Set up a virtual environment
+    
+    Open Command Prompt where you want to create the environment and set up a virtual environment called `.env` in local machine (Windows)
+    ```
+    python -m venv .env
+    ```
+- Activate the environment
+    
+    In the same folder, activate the environment using the following command:
+    ```
+    .env\Scripts\activate
+    ```
+- Install Streamlit
+    
+    Once the environment is activated, the name of the environment will appear before the root directory of the folder on Command Prompt. Install Streamlit here
+    ```
+    pip install streamlit
+    ```
+- Launch the Streamlit Demo App
+
+    Run the following command to launch the `Streamlit Hello` Demo application
+    ```
+    streamlit hello
+    ```
+
+<h3> Results </h3>
 
 <img src="./images/Day1.png">
-
 </details>
