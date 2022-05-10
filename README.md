@@ -60,5 +60,6 @@ By taking up the challenge, I wish to accomplish the following goals:
 
 <h3> Results </h3>
 
-<img src="./images/Day1.png">
+![Day 1](./images/Day1.png)
+
 </details>
