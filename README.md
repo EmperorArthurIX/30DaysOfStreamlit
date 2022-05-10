@@ -63,3 +63,43 @@ By taking up the challenge, I wish to accomplish the following goals:
 ![Day 1](./images/Day1.png)
 
 </details>
+
+<details>
+<summary>Day 2</summary>
+<h3> Task Summary </h3>
+
+- Create a Python File
+
+    Using the file name `streamlit_app.py` enables deployment directly under the GitHub repository name instead of the specific file name
+
+- Write some code
+
+    Import Streamlit and write some code for your streamlit application!
+
+    ```
+    import streamlit as st
+
+    st.title('30 Days of Streamlit')
+    st.header('Welcome to my application!')
+    ```
+
+- Launch the app from your terminal
+
+    Using the command line interface, run the streamlit application on localhost
+
+    If you have a virtual environment, activate it from the command line (Windows)
+    ```
+    .env\Scripts\activate
+    ```
+    Launch the application from the command line
+    ```
+    streamlit run streamlit_app.py
+    ```
+
+<h3> Results </h3>
+
+![Day 2](./images/Day2.png)
+
+![Day 2](./images/Day2_2.png)
+
+</details>
