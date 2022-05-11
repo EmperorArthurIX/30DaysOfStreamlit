@@ -89,8 +89,7 @@ def call_special(day):
 
     * `day` :   The day for which the special function is to be called
     """
-    if day == 'Day 3':
-        day3_special()
+    globals()['day'+day[-1]+'_special']()       # globals() used since func call is elsewhere, not here. If main app was here, use locals()
     return
 
 
@@ -102,3 +101,15 @@ def day3_special():
         st.write("You've pressed the button! This is the Day 3 surprise ;)")
     else:
         st.write("Hmm...I wonder what's so special...")
+
+
+def day5_special():
+    """
+    Special function for Day 3
+    """
+    st.write(
+        "Day 5's special function is `st.write`",
+        "In fact, this text has been written using this function!",
+        "`st.write` supports Markdown, Functions Descriptions, DataFrames, Charts and Visualisations, Numbers and the list goes on.",
+        "It also supports multiple arguments, just like all these different sentences each in a different string!"
+        )

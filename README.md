@@ -59,7 +59,6 @@ By taking up the challenge, I wish to accomplish the following goals:
     streamlit hello
     ```
 
-
 ### Results
 
 ![Day 1](./images/Day1.png)
@@ -98,7 +97,6 @@ By taking up the challenge, I wish to accomplish the following goals:
     ```
     streamlit run streamlit_app.py
     ```
-
 
 ### Results
 
@@ -157,7 +155,6 @@ By taking up the challenge, I wish to accomplish the following goals:
     streamlit run streamlit_app.py
     ```
 
-
 ### Results
 
 ![Day 3](./images/Day3.png)
@@ -194,6 +191,7 @@ By taking up the challenge, I wish to accomplish the following goals:
 - Update README file with link to Application
 
     Once deployed, copy the application URL and link to it in the README using [this](https://static.streamlit.io/badges/streamlit_badge_black_white.svg) Streamlit Badge!
+
 
 ### Results
 
