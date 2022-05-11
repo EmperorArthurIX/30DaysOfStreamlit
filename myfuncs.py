@@ -79,3 +79,26 @@ def read_RM_data(filepath, day):
                 return ''
     
     return data
+
+
+def call_special(day):
+    """
+    Calls the special function defined for each day in the `SPECIAL` days set
+
+    Parameters:
+
+    * `day` :   The day for which the special function is to be called
+    """
+    if day == 'Day 3':
+        day3_special()
+    return
+
+
+def day3_special():
+    """
+    Special function for Day 3
+    """
+    if st.button("Day 3 Special Button"):
+        st.write("You've pressed the button! This is the Day 3 surprise ;)")
+    else:
+        st.write("Hmm...I wonder what's so special...")

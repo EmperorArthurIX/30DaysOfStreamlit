@@ -103,3 +103,59 @@ By taking up the challenge, I wish to accomplish the following goals:
 ![Day 2](./images/Day2_2.png)
 
 </details>
+
+<details>
+<summary>Day 3</summary>
+<h3> Task Summary </h3>
+
+- Using Buttons in Streamlit
+
+    We can add buttons to our application using the `st.button` widget
+    ```
+    import streamlit as st
+    
+    st.title("30 Days of Streamlit")
+    
+    st.button("I am a button")
+    ```
+
+- Add button-dependant code to the application
+
+    We can program certain events to occur once a button is clicked and when it is not clicked
+
+    ```
+    import streamlit as st
+
+    st.title('30 Days of Streamlit')
+    st.header('Welcome to my application!')
+
+    if st.button("Click Me"):
+        st.write("This is a message from the button!")
+    
+    bt1 = st.button("Button 2")
+    if bt1:
+        st.write("You clicked button 2")
+    else:
+        st.write("You have not clicked button 2")
+    ```
+
+- Launch the app from your terminal
+
+    Using the command line interface, run the streamlit application on localhost
+
+    If you have a virtual environment, activate it from the command line (Windows)
+    ```
+    .env\Scripts\activate
+    ```
+    Launch the application from the command line
+    ```
+    streamlit run streamlit_app.py
+    ```
+
+<h3> Results </h3>
+
+![Day 3](./images/Day3.png)
+
+![Day 3](./images/Day3_2.png)
+
+</details>
