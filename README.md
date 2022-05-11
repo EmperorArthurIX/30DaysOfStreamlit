@@ -31,7 +31,8 @@ By taking up the challenge, I wish to accomplish the following goals:
 
 <details open>
 <summary>Day 1</summary>
-<h3> Task Summary </h3>
+
+### Task Summary
 
 - Set up a virtual environment
     
@@ -58,7 +59,8 @@ By taking up the challenge, I wish to accomplish the following goals:
     streamlit hello
     ```
 
-<h3> Results </h3>
+
+### Results
 
 ![Day 1](./images/Day1.png)
 
@@ -66,7 +68,8 @@ By taking up the challenge, I wish to accomplish the following goals:
 
 <details>
 <summary>Day 2</summary>
-<h3> Task Summary </h3>
+
+### Task Summary
 
 - Create a Python File
 
@@ -96,7 +99,8 @@ By taking up the challenge, I wish to accomplish the following goals:
     streamlit run streamlit_app.py
     ```
 
-<h3> Results </h3>
+
+### Results
 
 ![Day 2](./images/Day2.png)
 
@@ -106,7 +110,8 @@ By taking up the challenge, I wish to accomplish the following goals:
 
 <details>
 <summary>Day 3</summary>
-<h3> Task Summary </h3>
+
+### Task Summary
 
 - Using Buttons in Streamlit
 
@@ -152,7 +157,45 @@ By taking up the challenge, I wish to accomplish the following goals:
     streamlit run streamlit_app.py
     ```
 
-<h3> Results </h3>
+
+### Results
+
+![Day 3](./images/Day3.png)
+
+![Day 3](./images/Day3_2.png)
+
+</details>
+
+<details>
+<summary>Day 4</summary>
+
+### Task Summary
+
+- Set up a new environment for a Streamlit app
+    
+    > Read [here](#task-summary) for details
+
+- Get data from Kaggle Dataset
+
+    > Dataset available [here](https://www.kaggle.com/datasets/kenjee/ken-jee-youtube-data)
+
+- Perform Exploratory Data Analysis
+
+    > Explained by Ken Jee [here](https://www.youtube.com/watch?v=Yk-unX4KnV4)
+
+- Store the app and related data in a GitHub repository
+
+    Upload the project to GitHub in a repository and define a README file explaining its details!
+
+- Deploy the application on Streamlit Cloud from the GitHub Repository
+
+    Launch the app using localhost, then select 'Deploy on Streamlit Cloud' from the navigation menu on the top right. Follow the instructions and set up the project accordingly for deployment.
+
+- Update README file with link to Application
+
+    Once deployed, copy the application URL and link to it in the README using [this](https://static.streamlit.io/badges/streamlit_badge_black_white.svg) Streamlit Badge!
+
+### Results
 
 ![Day 3](./images/Day3.png)
 
