@@ -195,8 +195,116 @@ By taking up the challenge, I wish to accomplish the following goals:
 
 ### Results
 
-![Day 3](./images/Day3.png)
+![Day 4](./images/Day4.png)
 
-![Day 3](./images/Day3_2.png)
+<!-- ![Day 4](./images/Day3_2.png) -->
+
+</details>
+
+<details>
+<summary>Day 5</summary>
+
+### Task Summary
+
+- Write Text in Streamlit
+
+    We can add text to our application using the `st.write` function
+    ```
+    import streamlit as st
+    
+    st.title("30 Days of Streamlit")
+    
+    st.write("This is written using `st.write`")
+    ```
+
+- Versatility of `st.write`
+
+    The write function can be used to display not just text, but also:
+
+    - Markdown strings, like `st.markdown()`
+    - Python dictionaries, lists, tuples
+    - Pandas DataFrame, as a table
+    - Plots/graphs/figures from `matplotlib`, `plotly`, `altair`, `graphviz`, `bokeh`
+    
+    And the list goes on!
+
+    ```
+    import streamlit as st
+    import pandas as pd
+
+    st.title('30 Days of Streamlit')
+    st.header('Welcome to my application!')
+
+    st.write("Hello world!")
+
+    st.write(2*3.14)
+
+    st.write(
+        "#### This is a subheading\n",
+        "\nThis line follows the subheading\n",
+        "\nThese three lines are written in Markdown, using the same function!")
+
+    st.write(pd.DataFrame([[j*i for j in range(5)] for i in range(5)]))
+    ```
+
+- Launch the app from your terminal
+
+    Once the app is ready, open the command line interface and run the streamlit application on localhost
+
+    If you have a virtual environment, activate it from the command line (Windows)
+    ```
+    .env\Scripts\activate
+    ```
+    Launch the application from the command line
+    ```
+    streamlit run streamlit_app.py
+    ```
+
+### Results
+
+![Day 5](./images/Day5.png)
+
+</details>
+
+<details>
+<summary>Day 6</summary>
+
+### Task Summary
+
+- Sign Up/ Login to GitHub
+
+    Proceed to [GitHub](https://www.github.com) and enter your credentials to access your profile. Here, the Streamlit App shall be uploaded in a repository
+
+- Create a Repository for the application
+    
+    Choose an appropriate name, relevant to your application, and create a repository in which the code and dependencies of the application may be stored
+    
+    This may be done by the Command Line Interface provided by GitHub, or by using GUI on the website
+
+- Upload files to the repository
+
+    You can open the repository on the GitHub web page, then drag and drop the files relevant to the project there
+
+    OR
+
+    Use GitHub from the command line to connect a local project repository to the remote repository on GitHub, then push code onto it
+
+
+### Results
+
+![Day 6](./images/Day6.png)
+
+</details>
+
+<details>
+<summary>Day 7</summary>
+
+### Task Summary
+
+- 
+
+### Results
+
+![Day 7](./images/Day7.png)
 
 </details>
