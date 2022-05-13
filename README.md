@@ -1,3 +1,5 @@
+[![30 Days of Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/emperorarthurix/30daysofstreamlit/main)
+
 # 30 Days of Streamlit
 
 I have always loved working with Streamlit, ever since I first discovered it.
@@ -316,7 +318,14 @@ By taking up the challenge, I wish to accomplish the following goals:
     streamlit run streamlit_app.py
     ```
 
-- 
+- Login/Sign Up for Streamlit Cloud
+
+    On being taken to the Streamlit Cloud deployment page, enter your credentials to gain access to the deployment menu
+
+- Deploy a new application from an existing repository
+
+    From the dropdown menu, choose `from an existing repository` to link your application to the GitHub repository in which your streamlit application is uploaded! Make sure to check advanced settings and change the Python Version to the one you used during development!
+
 
 ### Results
 
@@ -328,5 +337,27 @@ By taking up the challenge, I wish to accomplish the following goals:
 #### Making sure GitHub is up-to-date and stable
 
 ![Day 7](./images/Day7_2.png)
+
+#### Log in to Streamlit Cloud
+
+![Day 7](./images/Day7_3.png)
+
+#### Deploy from existing repository
+
+![Day 7](./images/Day7_4.png)
+
+#### Link repository to cloud
+
+![Day 7](./images/Day7_5.png)
+
+#### Choose Python version
+
+![Day 7](./images/Day7_6.png)
+
+#### Wait till build completes, then share your app!
+
+![Day 7](./images/Day7_7.png)
+
+![Day 7](./images/Day7_8.png)
 
 </details>
