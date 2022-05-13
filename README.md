@@ -412,4 +412,6 @@ By taking up the challenge, I wish to accomplish the following goals:
 
 ![Day 8](./images/Day8.png)
 
+![Day 8](./images/Day8_2.png)
+
 </details>
