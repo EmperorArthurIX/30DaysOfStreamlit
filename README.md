@@ -301,10 +301,32 @@ By taking up the challenge, I wish to accomplish the following goals:
 
 ### Task Summary
 
+- Make sure the application on GitHub is stable
+
+    Before deploying the application on the cloud, we must make sure that the app runs stably and can sustain itself online
+
+- Launch the application through the terminal
+
+    If you have a virtual environment, activate it from the command line (Windows)
+    ```
+    .env\Scripts\activate
+    ```
+    Launch the application from the command line
+    ```
+    streamlit run streamlit_app.py
+    ```
+
 - 
 
 ### Results
 
+
+#### Deployment Menu
+
 ![Day 7](./images/Day7.png)
+
+#### Making sure GitHub is up-to-date and stable
+
+![Day 7](./images/Day7_2.png)
 
 </details>
