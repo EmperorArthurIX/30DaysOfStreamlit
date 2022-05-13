@@ -66,7 +66,7 @@ def read_RM_data(filepath, day):
     """
     with open(filepath, "r+") as f:
         srch_str = '<summary>'+day+'</summary>'       # Keep README consistent with this
-        stop_str = '</details>'
+        stop_str = '### Results'
         data = ""
         while srch_str not in data:
             data = f.readline()
@@ -77,7 +77,8 @@ def read_RM_data(filepath, day):
             data += f.readline()
             if not data:
                 return ''
-    
+
+        data = data[:-len(stop_str)]
     return data
 
 
