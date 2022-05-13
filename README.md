@@ -361,3 +361,55 @@ By taking up the challenge, I wish to accomplish the following goals:
 ![Day 7](./images/Day7_8.png)
 
 </details>
+
+<details>
+<summary>Day 8</summary>
+
+### Task Summary
+
+- Use `st.slider` to get numeric or range input from user
+
+    The `st.slider` widget allows for user input as a number, or a range, without the user having to type anything; instead, by dragging a slider.
+    ```
+    import streamlit as st
+    
+    st.title("30 Days of Streamlit")
+
+    sal = st.slider("Enter Salary:", min_value=1000, max_value=10000)
+
+    st.write("Your tax at 5% is: " + str(round(sal*0.05, 2)))
+    ```
+
+- We can even use the slider to take in a range
+
+    By passing the `value` argument as a tuple or list, we can modify the slider to accept a range with default selected upper and lower limits specified in `value`
+    ```
+    import streamlit as st
+    from datetime import time
+
+    appointment = st.slider(
+        "Schedule your appointment:",
+        value=(time(11, 30), time(12, 45))
+        )
+    st.write("You're scheduled for:", appointment[0] - appointment[1])
+    ```
+
+- Launch the app from your terminal
+
+    Once the app is ready, open the command line interface and run the streamlit application on localhost
+
+    If you have a virtual environment, activate it from the command line (Windows)
+    ```
+    .env\Scripts\activate
+    ```
+    Launch the application from the command line
+    ```
+    streamlit run streamlit_app.py
+    ```
+
+
+### Results
+
+![Day 8](./images/Day8.png)
+
+</details>

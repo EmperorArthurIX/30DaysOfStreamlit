@@ -5,8 +5,8 @@ from myfuncs import *
 ### DECLARATIONS ###
 
 MAX_DAYS=30
-COMPLETED=daylist(MAX_DAYS)[:5]     # Update till completion
-SPECIAL=set(['Day 3','Day 5'])      # Update till completion
+COMPLETED=daylist(MAX_DAYS)[:8]     # Update till completion
+SPECIAL=set(['Day 3', 'Day 5', 'Day 8'])      # Update till completion
 
 ### HEADER ###
 st.title("30 Days of Streamlit")
@@ -25,9 +25,9 @@ if day in COMPLETED:
     except Exception as exp:
         print(exp.args[0])
     
+    st.markdown(data)       # Can display rogue HTML tags
+    
     if day in SPECIAL:
         call_special(day)
-    
-    st.markdown(data, unsafe_allow_html=True)       # Can break due to rogue HTML
 else:
     intro()
