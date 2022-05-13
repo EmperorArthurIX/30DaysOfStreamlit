@@ -114,3 +114,20 @@ def day5_special():
         "`st.write` supports Markdown, Functions Descriptions, DataFrames, Charts and Visualisations, Numbers and the list goes on.",
         "It also supports multiple arguments, just like all these different sentences each in a different string!"
         )
+
+def day8_special():
+    """
+    Special function for Day 8
+    """
+    age = st.slider("What is your age?", min_value=1, max_value=150)
+    if age < 10:
+        st.write("It's great to see such a young person taking interest in Streamlit!")
+    elif age < 50:
+        st.write("Make the most of Streamlit and keep practicing!")
+    elif age < 100:
+        st.write("Streamlit makes our lives easier!")
+    else:
+        st.write("You've crossed a century, and that's amazing!")
+
+    rng = st.slider("Plot numbers in range:", min_value=0, max_value=100, value=(10, 50))
+    st.bar_chart(range(rng[0], rng[1]+1))

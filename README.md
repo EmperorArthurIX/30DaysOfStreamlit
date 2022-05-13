@@ -1,3 +1,5 @@
+[![30 Days of Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/emperorarthurix/30daysofstreamlit/main)
+
 # 30 Days of Streamlit
 
 I have always loved working with Streamlit, ever since I first discovered it.
@@ -316,7 +318,14 @@ By taking up the challenge, I wish to accomplish the following goals:
     streamlit run streamlit_app.py
     ```
 
-- 
+- Login/Sign Up for Streamlit Cloud
+
+    On being taken to the Streamlit Cloud deployment page, enter your credentials to gain access to the deployment menu
+
+- Deploy a new application from an existing repository
+
+    From the dropdown menu, choose `from an existing repository` to link your application to the GitHub repository in which your streamlit application is uploaded! Make sure to check advanced settings and change the Python Version to the one you used during development!
+
 
 ### Results
 
@@ -328,5 +337,81 @@ By taking up the challenge, I wish to accomplish the following goals:
 #### Making sure GitHub is up-to-date and stable
 
 ![Day 7](./images/Day7_2.png)
+
+#### Log in to Streamlit Cloud
+
+![Day 7](./images/Day7_3.png)
+
+#### Deploy from existing repository
+
+![Day 7](./images/Day7_4.png)
+
+#### Link repository to cloud
+
+![Day 7](./images/Day7_5.png)
+
+#### Choose Python version
+
+![Day 7](./images/Day7_6.png)
+
+#### Wait till build completes, then share your app!
+
+![Day 7](./images/Day7_7.png)
+
+![Day 7](./images/Day7_8.png)
+
+</details>
+
+<details>
+<summary>Day 8</summary>
+
+### Task Summary
+
+- Use `st.slider` to get numeric or range input from user
+
+    The `st.slider` widget allows for user input as a number, or a range, without the user having to type anything; instead, by dragging a slider.
+    ```
+    import streamlit as st
+    
+    st.title("30 Days of Streamlit")
+
+    sal = st.slider("Enter Salary:", min_value=1000, max_value=10000)
+
+    st.write("Your tax at 5% is: " + str(round(sal*0.05, 2)))
+    ```
+
+- We can even use the slider to take in a range
+
+    By passing the `value` argument as a tuple or list, we can modify the slider to accept a range with default selected upper and lower limits specified in `value`
+    ```
+    import streamlit as st
+    from datetime import time
+
+    appointment = st.slider(
+        "Schedule your appointment:",
+        value=(time(11, 30), time(12, 45))
+        )
+    st.write("You're scheduled for:", appointment[0] - appointment[1])
+    ```
+
+- Launch the app from your terminal
+
+    Once the app is ready, open the command line interface and run the streamlit application on localhost
+
+    If you have a virtual environment, activate it from the command line (Windows)
+    ```
+    .env\Scripts\activate
+    ```
+    Launch the application from the command line
+    ```
+    streamlit run streamlit_app.py
+    ```
+
+
+### Results
+
+![Day 8](./images/Day8.png)
+
+![Day 8](./images/Day8_2.png)
 
 </details>
