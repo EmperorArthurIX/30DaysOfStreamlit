@@ -415,3 +415,107 @@ By taking up the challenge, I wish to accomplish the following goals:
 ![Day 8](./images/Day8_2.png)
 
 </details>
+
+<details>
+<summary>Day 9</summary>
+
+### Task Summary
+
+- Use `st.line_chart` to display a range using a line plot
+
+    The `st.line_chart` widget is a simplified version of `st.altair_chart`, made for ease of use
+    ```
+    import streamlit as st
+    
+    st.title("30 Days of Streamlit")
+
+    st.line_chart(data=range(100))
+    ```
+
+- We can use the slider to take in a range, then define a plot using those values
+
+    By passing the `value` argument as a tuple or list, we can modify the slider to accept a range with default selected upper and lower limits specified in `value`
+    ```
+    import streamlit as st
+    import numpy as np
+
+    rng = st.slider("Choose a range",0, 100, value=(25, 75))
+    arr = np.random.randint(low=rng[0], high=rng[1], size=100)
+
+    st.line_chart(data=arr)
+    ```
+
+- Launch the app from your terminal
+
+    Once the app is ready, open the command line interface and run the streamlit application on localhost
+
+    If you have a virtual environment, activate it from the command line (Windows)
+    ```
+    .env\Scripts\activate
+    ```
+    Launch the application from the command line
+    ```
+    streamlit run streamlit_app.py
+    ```
+
+
+### Results
+
+![Day 9](./images/Day9.png)
+
+![Day 9](./images/Day9_2.png)
+
+</details>
+
+<details>
+<summary>Day 10</summary>
+
+### Task Summary
+
+- Use `st.selectbox` to display a list of options
+
+    The `st.selectbox` widget is used to provide a dropdown list of options, out of which the user may choose only one
+    ```
+    import streamlit as st
+    
+    st.title("30 Days of Streamlit")
+
+    st.selectbox("Gender", options=["Female", "Male", "Non-Binary"])
+    ```
+
+- We can use the select box in multiple ways
+
+    In fact, here on this app, we have used the select box to help you navigate through the various days of this challenge!
+    ```
+    import streamlit as st
+
+    day = st.sidebar.selectbox("Which day do you wish to visit?", ["Day " + str(i+1) for i in range(1,31)])
+
+    st.subheader(day)
+    ```
+
+- Launch the app from your terminal
+
+    Once the app is ready, open the command line interface and run the streamlit application on localhost
+
+    If you have a virtual environment, activate it from the command line (Windows)
+    ```
+    .env\Scripts\activate
+    ```
+    Launch the application from the command line
+    ```
+    streamlit run streamlit_app.py
+    ```
+
+
+### Results
+
+![Day 10](./images/Day10.png)
+
+![Day 10](./images/Day10_2.png)
+
+![Day 10](./images/Day10_3.png)
+
+![Day 10](./images/Day10_4.png)
+
+</details>

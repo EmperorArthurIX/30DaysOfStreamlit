@@ -1,3 +1,5 @@
+from random import seed
+from numpy import size
 import streamlit as st
 
 def intro(day=None, isDone=False):
@@ -90,7 +92,7 @@ def call_special(day):
 
     * `day` :   The day for which the special function is to be called
     """
-    globals()['day'+day[-1]+'_special']()       # globals() used since func call is elsewhere, not here. If main app was here, use locals()
+    globals()['day'+day[4:]+'_special']()       # globals() used since func call is elsewhere, not here. If main app was here, use locals()
     return
 
 
@@ -115,6 +117,7 @@ def day5_special():
         "It also supports multiple arguments, just like all these different sentences each in a different string!"
         )
 
+
 def day8_special():
     """
     Special function for Day 8
@@ -131,3 +134,29 @@ def day8_special():
 
     rng = st.slider("Plot numbers in range:", min_value=0, max_value=100, value=(10, 50))
     st.bar_chart(range(rng[0], rng[1]+1))
+
+
+def day9_special():
+    """
+    Special function for Day 9
+    """
+    import numpy as np
+    rng = st.slider("Choose a range",0, 100, value=(25, 75))
+    arr = np.random.randint(low=rng[0], high=rng[1], size=100)
+    st.caption("Plotting 100 random numbers from {} to {}, using `st.line_chart`".format(rng[0], rng[1]))
+    st.line_chart(data=arr)
+
+
+def day10_special():
+    """
+    Special function Day 10
+    """
+    import numpy as np
+    choice = st.selectbox("Select a chart type:", ["Line", "Bar", "Area"])
+    arr = np.random.randint(low=0, high=100, size=(10, 2))
+    if choice == "Line":
+        st.line_chart(arr)
+    elif choice == "Bar":
+        st.bar_chart(arr)
+    else:
+        st.area_chart(arr)
