@@ -519,3 +519,52 @@ By taking up the challenge, I wish to accomplish the following goals:
 ![Day 10](./images/Day10_4.png)
 
 </details>
+
+<details>
+<summary>Day 11</summary>
+
+### Task Summary
+
+- Use `st.multiselect` to display a list of options
+
+    The `st.multiselect` widget is used to provide a dropdown list of options, out of which the user may choose more than one
+    ```
+    import streamlit as st
+    
+    st.title("30 Days of Streamlit")
+
+    countries = st.multiselect("Countries visited", ["India", "Sri Lanka", "Nepal"])
+    ```
+
+- We can use the select box in multiple ways
+
+    It allows the user to choose multiple options, thus we may use it in cases where we want the user to choose a list of columns from a dataset, or a list of langauges for translation, or a set of data types to use, and so on
+    ```
+    import streamlit as st
+
+    langs = st.multiselect("Which languages do you speak?", ['English', "Spanish", "German"])
+
+    st.write("You speak:", *langs)
+    ```
+
+- Launch the app from your terminal
+
+    Once the app is ready, open the command line interface and run the streamlit application on localhost
+
+    If you have a virtual environment, activate it from the command line (Windows)
+    ```
+    .env\Scripts\activate
+    ```
+    Launch the application from the command line
+    ```
+    streamlit run streamlit_app.py
+    ```
+
+
+### Results
+
+![Day 11](./images/Day11.png)
+
+![Day 11](./images/Day11_2.png)
+
+</details>

@@ -149,7 +149,7 @@ def day9_special():
 
 def day10_special():
     """
-    Special function Day 10
+    Special function for Day 10
     """
     import numpy as np
     choice = st.selectbox("Select a chart type:", ["Line", "Bar", "Area"])
@@ -160,3 +160,15 @@ def day10_special():
         st.bar_chart(arr)
     else:
         st.area_chart(arr)
+
+
+def day11_special():
+    """
+    Special function for Day 11
+    """
+    from translate import Translator
+    sentence = st.text_input("Enter a sentence in English", value="This is the default sentence!")
+    langs = st.multiselect("Which languages do you speak?", ['English', "Spanish", "German"])
+    for lang in langs:
+        t = Translator(to_lang=lang)
+        st.write(t.translate(sentence))
