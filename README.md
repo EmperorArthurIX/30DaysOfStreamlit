@@ -568,3 +568,59 @@ By taking up the challenge, I wish to accomplish the following goals:
 ![Day 11](./images/Day11_2.png)
 
 </details>
+
+<details>
+<summary>Day 12</summary>
+
+### Task Summary
+
+- Use `st.checkbox` to display a checkbox
+
+    The `st.checkbox` widget is used to provide an enable-disable type option, which returns a boolean value
+    ```
+    import streamlit as st
+    
+    st.title("30 Days of Streamlit")
+
+    if st.checkbox("Tick Me"):
+        st.baloons()
+    ```
+
+- Write checkbox dependent code in your application!
+
+    
+    ```
+    import streamlit as st
+
+    domains = ['Web Dev', 'Cloud', 'Data Science', 'Blockchain']
+    arr = list()
+
+    for i, domain in enumerate(domains):
+        arr.append(st.checkbox(domain))
+    
+    for i, domain in enumerate(arr):
+        if domain:
+            st.write(domains[i])
+    ```
+
+- Launch the app from your terminal
+
+    Once the app is ready, open the command line interface and run the streamlit application on localhost
+
+    If you have a virtual environment, activate it from the command line (Windows)
+    ```
+    .env\Scripts\activate
+    ```
+    Launch the application from the command line
+    ```
+    streamlit run streamlit_app.py
+    ```
+
+
+### Results
+
+![Day 12](./images/Day12.png)
+
+![Day 12](./images/Day12_2.png)
+
+</details>

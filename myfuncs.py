@@ -172,3 +172,17 @@ def day11_special():
     for lang in langs:
         t = Translator(to_lang=lang)
         st.write(t.translate(sentence))
+
+
+def day12_special():
+    """
+    Special function for Day 12
+    """
+    domains = ['Web Dev', 'Cloud', 'Data Science', 'Blockchain']
+    arr = list()
+    for i, domain in enumerate(domains):
+        arr.append(st.checkbox(domain))
+    
+    for i, domain in enumerate(arr):
+        if domain:
+            st.write(domains[i])
