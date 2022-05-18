@@ -624,3 +624,35 @@ By taking up the challenge, I wish to accomplish the following goals:
 ![Day 12](./images/Day12_2.png)
 
 </details>
+
+<details>
+<summary>Day 13</summary>
+
+### Task Summary
+
+- Connect to a Cloud Development environment
+
+    By connecting to an IDE on the cloud, one can work a lot faster while also being connected to version control directly.
+
+- One method of connecting to cloud development environments is using GitPod
+
+    With support for famous text editors and IDEs, GitPod grants cloud development features while facilitating ease of use by allowing users to develop in an environment of their choice from a group of editors offered by Microsoft and JetBrains.
+
+### Results
+
+![Day 13](./images/Day13.png)
+
+</details>
+
+<details>
+<summary>Day 14</summary>
+
+### Task Summary
+
+- 
+
+### Results
+
+![Day 14](./images/Day14.png)
+
+</details>
