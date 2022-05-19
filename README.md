@@ -649,10 +649,33 @@ By taking up the challenge, I wish to accomplish the following goals:
 
 ### Task Summary
 
-- 
+- Using components in Streamlit
+
+    Streamlit is not just a module in Python, there are a large number of supporting libraries and modules that make using Streamlit for applications much more sensible, accessible and efficient
+
+- There is a list of such Streamlit Components, built by the community of tech enthusiasts, available [here](https://streamlit.io/components)!
+
+- We may use components such as Streamlit_folium to render Folium Maps in Streamlit Apps!
+
+    ```
+    import streamlit as st
+    import streamlit_folium as sf
+    import folium
+
+    st.title("30 Days of Streamlit")
+
+    world = folium.Map(
+        location=(0, 0),
+        zoom_start=4
+        )
+
+    sf.st_folium(world)
+    ```
 
 ### Results
 
 ![Day 14](./images/Day14.png)
+
+![Day 14](./images/Day14_2.png)
 
 </details>
