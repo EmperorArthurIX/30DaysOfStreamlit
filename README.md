@@ -624,3 +624,58 @@ By taking up the challenge, I wish to accomplish the following goals:
 ![Day 12](./images/Day12_2.png)
 
 </details>
+
+<details>
+<summary>Day 13</summary>
+
+### Task Summary
+
+- Connect to a Cloud Development environment
+
+    By connecting to an IDE on the cloud, one can work a lot faster while also being connected to version control directly.
+
+- One method of connecting to cloud development environments is using GitPod
+
+    With support for famous text editors and IDEs, GitPod grants cloud development features while facilitating ease of use by allowing users to develop in an environment of their choice from a group of editors offered by Microsoft and JetBrains.
+
+### Results
+
+![Day 13](./images/Day13.png)
+
+</details>
+
+<details>
+<summary>Day 14</summary>
+
+### Task Summary
+
+- Using components in Streamlit
+
+    Streamlit is not just a module in Python, there are a large number of supporting libraries and modules that make using Streamlit for applications much more sensible, accessible and efficient
+
+- There is a list of such Streamlit Components, built by the community of tech enthusiasts, available [here](https://streamlit.io/components)!
+
+- We may use components such as Streamlit_folium to render Folium Maps in Streamlit Apps!
+
+    ```
+    import streamlit as st
+    import streamlit_folium as sf
+    import folium
+
+    st.title("30 Days of Streamlit")
+
+    world = folium.Map(
+        location=(0, 0),
+        zoom_start=4
+        )
+
+    sf.st_folium(world)
+    ```
+
+### Results
+
+![Day 14](./images/Day14.png)
+
+![Day 14](./images/Day14_2.png)
+
+</details>

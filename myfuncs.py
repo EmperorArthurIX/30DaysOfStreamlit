@@ -186,3 +186,23 @@ def day12_special():
     for i, domain in enumerate(arr):
         if domain:
             st.write(domains[i])
+
+
+def day14_special():
+    """
+    Special function for Day 14
+    """
+    import streamlit_folium as sf
+    import folium
+
+    world = folium.Map(
+        location=(18.9316079, 73.1601956),
+        zoom_start=4,
+        tiles="Stamen Toner", width='100',)
+    folium.Marker(
+        location=(18.9316079, 73.1601956),
+        popup="Amity University Mumbai",
+        tooltip="This is where I study"
+    ).add_to(world)
+
+    sf.st_folium(world)
