@@ -679,3 +679,31 @@ By taking up the challenge, I wish to accomplish the following goals:
 ![Day 14](./images/Day14_2.png)
 
 </details>
+
+<details>
+<summary>Day 15</summary>
+
+### Task Summary
+
+- Using `st.latex` to format strings
+
+    The `st.latex` function allows us to display strings and SymPy equations in LaTeX format on screen. This greatly increases readability and facilitates explanation of the mathematics behind code, or general documentation
+
+    ```
+    import streamlit as st
+
+    st.title("30 Days of Streamlit)
+    st.latex(r"""Equation of a line: \\ y = m \dot x + c""")
+    ```
+
+- LaTeX syntax can be studied [here](https://www.overleaf.com/learn)
+
+    LaTeX is one of the most popular markups for formal documentation, especially research papers and articles. Thus, mathematics based programs often include LaTeX based explanations of their code and its basis
+
+### Results
+
+![Day 15](./images/Day15.png)
+
+![Day 15](./images/Day15_2.png)
+
+</details>

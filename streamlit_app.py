@@ -5,8 +5,8 @@ from myfuncs import *
 ### DECLARATIONS ###
 
 MAX_DAYS=30
-COMPLETED=daylist(MAX_DAYS)[:14]     # Update till completion
-SPECIAL=set(['Day 3', 'Day 5', 'Day 8', 'Day 9', 'Day 10', 'Day 11', 'Day 12', 'Day 14'])      # Update till completion
+COMPLETED=daylist(MAX_DAYS)[:15]     # Update till completion
+SPECIAL=set(['Day 3', 'Day 5', 'Day 8', 'Day 9', 'Day 10', 'Day 11', 'Day 12', 'Day 14', 'Day 15'])      # Update till completion
 
 ### HEADER ###
 st.title("30 Days of Streamlit")

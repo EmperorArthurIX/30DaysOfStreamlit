@@ -206,3 +206,31 @@ def day14_special():
     ).add_to(world)
 
     sf.st_folium(world)
+
+
+def day15_special():
+    """
+    Special function for Day 15
+    """
+    st.write("We can use `st.latex` to format LaTeX strings in Python!")
+    st.write("Like writing equations in Python")
+    st.latex(
+        r"""
+        x^2 + 4x + 4 = 0
+        \\
+        (x + 2) \cdot (x + 2) = 0
+        \\
+        \implies x = -2
+        """)
+    st.write("Or typing out identities")
+    st.latex(
+        r"""
+        a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} 
+        \\
+        = \sum_{k=0}^{n-1} ar^k
+        \\
+        = a \left(\frac{1-r^{n}}{1-r}\right)
+        """
+    )
+    st.write("One of the main uses of LaTeX in Python is while working with [SymPy](https://www.sympy.org/en/index.html)\n",
+    "\nIt is especially beneficial while documenting code and explaining the math behind functions")
