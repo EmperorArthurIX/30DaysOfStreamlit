@@ -234,3 +234,15 @@ def day15_special():
     )
     st.write("One of the main uses of LaTeX in Python is while working with [SymPy](https://www.sympy.org/en/index.html)\n",
     "\nIt is especially beneficial while documenting code and explaining the math behind functions")
+
+
+def day16_special():
+    """
+    Special function for Day 16
+    """
+    if st.button("Change Colors"):
+        with open('.streamlit\config.toml', 'w+') as config:
+            config.write('[theme]\nprimaryColor="#F39C12"\nbackgroundColor="#2E86C1"\nsecondaryBackgroundColor="#AED6F1"\ntextColor="#FFFFFF"\nfont="monospace"') 
+    if st.button("Get Original Colors"):
+        with open('.streamlit\config.toml', 'w+') as config:
+            config.write("")
