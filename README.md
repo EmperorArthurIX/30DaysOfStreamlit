@@ -707,3 +707,36 @@ By taking up the challenge, I wish to accomplish the following goals:
 ![Day 15](./images/Day15_2.png)
 
 </details>
+
+<details>
+<summary>Day 16</summary>
+
+### Task Summary
+
+- Using `config.toml` to control themes!
+
+    The `config.toml` file in the hidden `.streamlit` folder allows configuring the color scheme, fonts, and many other aspects of the streamlit application. If applied correctly, it may even be useful in letting the user customise the theme of the page to some extent (if implemented with proper security)
+
+- One may follow this example code to update the color scheme of the streamlit application
+
+    ```
+    [theme]
+    primaryColor="#F39C12"
+    backgroundColor="#2E86C1"
+    secondaryBackgroundColor="#AED6F1"
+    textColor="#FFFFFF"
+    font="monospace"
+    ```
+
+    More changes can be made by reading about the documentation [here](https://docs.streamlit.io/library/advanced-features/configuration)
+
+
+### Results
+
+![Day 16](./images/Day16.png)
+
+![Day 16](./images/Day16_2.png)
+
+![Day 16](./images/Day16_3.png)
+
+</details>
